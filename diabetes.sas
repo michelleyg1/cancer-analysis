@@ -40,15 +40,6 @@ proc means data=death.deaths2014_2019;
 var  Diabetes_mellitus__E10_E14_;
 run;
 
-proc means data=death.deaths2020_2022;
-var  All_Cause;
-run;
-
-proc means data=death.deaths2014_2019;
-var  All__Cause;
-run;
-
-
 /* Total Deaths from Diabetes Table*/
 
 proc sort data=death.deaths2020_2022;
