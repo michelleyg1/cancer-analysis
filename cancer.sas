@@ -166,14 +166,19 @@ data cancer.death_rate (rename=(Jurisdiction_of_Occurrence=State MMWR_Year=Year)
 	drop Population Total_Cancer_Deaths;
 run;
 
-/* Transpose to Wide Data for Analysis */
+/* Export to Excel for Tableau Analysis */
+proc export data=cancer.death_rate outfile="&path/cancer_narrow.xlsx"
+	dbms=xlsx replace;
+run;
+
+/* Transpose to Wide Data */
 proc transpose data=cancer.death_rate out=cancer.cancer_wide;
 	var Cancer_Death_Rate_Per_100000;
 	by State;
 	id Year;
 run;
 
-/* Export to Excel */
+/* Export to Excel Wide */
 data cancer.cancer;
 	set cancer.cancer_wide;
 	drop _NAME_;
@@ -182,4 +187,3 @@ run;
 proc export data=cancer.cancer outfile="&path/cancer.xlsx"
 	dbms=xlsx replace;
 run;
-	
