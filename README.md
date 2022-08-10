@@ -1,4 +1,4 @@
-# diabetes-analysis
+# cancer-analysis
 I completed this analysis as a personal project to strengthen my data analytics skills in SAS and to explore how cause-specific death rate for cancer has changed from 2014 to 2021 within different states.
 
 I used four datasets for this analysis,
