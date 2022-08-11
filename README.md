@@ -1,8 +1,7 @@
-# cancer-analysis
+# Cancer Analysis
 I completed this analysis as a personal project to strengthen my data analytics skills in SAS and to explore how cause-specific death rate for cancer has changed from 2014 to 2021 within different states.
 
-# Datasets Used
-
+## Datasets Used
 -Weekly Provisional Counts of Death by State and Select Causes, 2020-2022
 
 -Weekly Counts of Death by State and Select Causes, 2014-2019
@@ -11,7 +10,7 @@ I completed this analysis as a personal project to strengthen my data analytics 
 
 -Population, Population Change, and Estimated Components of Population Change: April 1, 2010 to July 1, 2019
 
-#Citations
+## Citations
 
 National Center for Health Statistics. Weekly Provisional Counts of Deaths by State and Select Causes, 2020-2022. Available from https://data.cdc.gov/d/muzy-jte6.
 
